@@ -22,45 +22,6 @@ class Vec2D
         }
     }
 
-    // float SizeSqr() const
-    // {
-    //     __m256 vector = _mm256_set_ps(0,0,0,0,0,0, Data[1], Data[0]);
-    //     vector = _mm256_mul_ps(vector, vector);
-    //     vector = _mm256_hadd_ps(vector, vector);
-
-    //     // now we want to extract the resulting sum and return
-    //     float result[8];
-    //     _mm256_store_ps(result, vector);
-    //     return result[0];
-    // }
-
-    // float Size() const
-    // {
-    //     __m256 vector = _mm256_set_ps(0,0,0,0,0,0, Data[1], Data[0]);
-    //     vector = _mm256_mul_ps(vector, vector);
-    //     vector = _mm256_hadd_ps(vector, vector);
-    //     vector = _mm256_sqrt_ps(vector);
-
-    //     // extract result of vector operations
-
-    //     float result[8];
-    //     _mm256_store_ps(result, vector);
-    //     return result[0];
-    // }
-
-    // Vec2D Norm() const
-    // {
-    //     float size = Size();
-    //     __m256 vector = _mm256_set_ps(0,0,0,0,0,0, Data[1], Data[0]);
-    //     __m256 sizeVector = _mm256_set1_ps(size);
-
-    //     vector = _mm256_div_ps(vector, sizeVector);
-
-    //     float result[8];
-    //     _mm256_store_ps(result, vector);
-    //     return  Vec2D(result[0], result[1]);
-        
-    // }
 
     float SizeSqr() const
     {
@@ -131,22 +92,6 @@ class Vec2D
         }
         return Returner;
     }
-
-    // Vec2D operator/(const float divisor) const
-    // {
-    //     // Load vector and divisor into AVX registers
-    //     __m256 vec = _mm256_set_ps(0, 0, 0, 0, 0, 0, Data[1], Data[0]);
-    //     __m256 div = _mm256_set1_ps(divisor);
-        
-    //     // Perform division
-    //     __m256 result = _mm256_div_ps(vec, div);
-        
-    //     // Extract results
-    //     float resultArray[8];
-    //     _mm256_store_ps(resultArray, result);
-        
-    //     return Vec2D(resultArray[0], resultArray[1]);
-    // }
 
     Vec2D operator*(const float scalar) const
     {

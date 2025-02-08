@@ -23,6 +23,5 @@ make clean
 nvcc -std=c++11 -O3 -Xcompiler -fopenmp -o simulator simulator.cpp flock.cpp boid.cpp grid.cpp cuda_flock.cu
 
 hostname
-time nsys profile ./simulator
-#time ./simulator
+time ./simulator
 #nsys stats report1.qdrep

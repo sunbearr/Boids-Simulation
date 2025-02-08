@@ -7,9 +7,6 @@
 #include "boid.hpp"
 #include "Vec.hpp"
 
-
-
-
 class Simulator {
     public:
         int numBoids = 1000;
