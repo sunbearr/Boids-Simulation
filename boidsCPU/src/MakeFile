@@ -1,0 +1,5 @@
+all:
+	g++ -std=c++11 -pg -lstdc++ -lm -O2 -o simulator simulator.cpp flock.cpp boid.cpp grid.cpp
+
+clean:
+	rm -f simulator
