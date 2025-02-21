@@ -8,5 +8,5 @@ GPU implementation uses CUDA to split boid processing across GPU threads. Comput
 1,000 boids:
 ![1,000 boids](1000boids.PNG)
 
-100,000 boids - about ~40 seconds on the with GPUs on the cluster, starts breaking pygame with so many objects
+100,000 boids - about ~40 seconds with GPUs on the cluster, starts breaking pygame with so many objects.
 ![100,000 boids](100000boids.PNG)
